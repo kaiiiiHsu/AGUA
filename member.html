@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8" crossorigin="anonymous">
+        </script>
+
+    <link rel="stylesheet" href="assets/css/member.css">
+    <title>會員專區</title>
+</head>
+
+<body>
+    <header class="p-3 text-white">
+        <div class="container">
+            <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+                <!--LOGO-->
+                <a href="index.html"
+                    class="d-flex align-items-center mb-2 me-3 mb-lg-0 text-white text-decoration-none">
+                    <img src="assets/image/logo.png" height="100" alt="logo">
+                </a>
+                <!--導覽列-->
+                <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-">
+                    <li><a href="index.html" class="nav-link px-2 text-white">首頁</a></li>
+                    <li><a href="goods.html" class="nav-link px-2 text-white">商品一覽</a></li>
+                    <li><a href="about.html" class="nav-link px-2 text-white">關於我們</a></li>
+                    <li><a href="recipe.html" class="nav-link px-2 text-white">調理推薦</a></li>
+                </ul>
+                <!--商品搜尋-->
+                <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3">
+                    <input name="itemSearch" type="search" class="form-control form-control-dark"
+                        placeholder="Search..." aria-label="Search">
+                </form>
+                <!--登入/購物車-->
+                <div class="text-end">
+                    <a href="login.html">
+                        <button type="button" class="btn btn-outline-light me-2"><img src="assets/image/user.png"
+                                height="30px" alt="user"></button>
+                    </a>
+                    <a href="Cart.html"><button type="button" class="btn btn-outline-light"><img
+                                src="assets/image/shopping-cart.png" height="30px" alt="cart"></button></a>
+
+                </div>
+            </div>
+        </div>
+    </header>
+    
+    <div class="block">
+        <section class="bg">
+            <div class="row py-5">
+                <div class="col">
+                    <h2 style="text-align: center;">會員專區</h2>
+                    <ul class="nav nav-tabs nav-fill" id="tab-fill" role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link active" id="tab1-fill" data-bs-toggle="tab"
+                                data-bs-target="#content1-fill" type="button" role="tab" aria-controls="tab1-fill"
+                                aria-selected="true" style="color: #000000">會員資料</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="tab2-fill" data-bs-toggle="tab" data-bs-target="#content2-fill"
+                                type="button" role="tab" aria-controls="tab2-fill" aria-selected="false"
+                                style="color: #000000">修改資料</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="tab3-fill" data-bs-toggle="tab" data-bs-target="#content3-fill"
+                                type="button" role="tab" aria-controls="tab3-fill" aria-selected="false"
+                                style="color: #000000">
+                                購買紀錄
+                            </button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="tab4-fill" data-bs-toggle="tab" data-bs-target="#content4-fill"
+                                type="button" role="tab" aria-controls="tab3-fill" aria-selected="false"
+                                style="color: #000000">
+                                評論紀錄
+                            </button>
+                        </li>
+                    </ul>
+                    <br>
+                    <div class="tab-content" id="tabContent-fill">
+                        <div class="tab-pane fade show active font" id="content1-fill" role="tabpanel"
+                            aria-labelledby="content1-fill">
+                            <div class="row">
+                                <div class="col" id="member-name">
+                                    姓名：我愛欣伶
+                                </div>
+                            </div>
+                            <br>
+                            <div class="row">
+                                <div class="col" id="member-birthday">
+                                    生日：2004/04/15
+                                </div>
+                            </div>
+                            <br>
+                            <div class="row">
+                                <div class="col" id="member-email">
+                                    電子郵件：smarttable@gmail.com
+                                </div>
+                            </div>
+                            <br>
+                            <div class="row">
+                                <div class="col" id="member-tel">
+                                    電話：09197823495
+                                </div>
+                            </div>
+                            <br>
+                        </div>
+                        <div class="tab-pane fade" id="content2-fill" role="tabpanel" aria-labelledby="content2-fill">
+                            <form action="" method="put" style="text-align: center;">
+                                <div class="form-group">
+                                    <input name="Name" type="text" class="form-control underLineStyle" placeholder="姓名"
+                                        required="required" minlength="1">
+                                </div>
+                                <br>
+                                <input name="Birthday" class="form-control underLineStyle" type="date" placeholder="生日"
+                                    min="1900-01-01" max="2024-06-12" required="required">
+                                <br>
+                                <div class="form-group">
+                                    <input name="Email" class="form-control underLineStyle" type="email"
+                                        placeholder="電子郵件" required="required"
+                                        pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$">
+                                </div>
+                                <br>
+                                <div class="form-group">
+                                    <input name="Tel" class="form-control underLineStyle" type="text"
+                                        placeholder="手機號碼(格式:09xxxxxxxx)" required="required" maxlength="10"
+                                        pattern="09\d{8}" oninput="setCustomValidity('');"
+                                        oninvalid="setCustomValidity('請輸入正確的手機號碼格式:09xxxxxxxx');">
+                                </div>
+                                <br>
+                                <input type="submit" value="儲存" class="btn btn-danger btn-block custom-btn">
+                            </form>
+                        </div>
+                        <div class="tab-pane fade" id="content3-fill" role="tabpanel" aria-labelledby="content3-fill">
+
+                            <div class="row mb-6">
+                                <div class="col-8 d-flex justify-content-between align-items-center border-bottom py-2">
+                                    <img src="assets/image/sparkling1.png" alt="photo" class="img-thumbnail product">
+                                    <span>NT$100</span>
+                                    <span>X1</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="content4-fill" role="tabpanel" aria-labelledby="content4-fill">
+                            <div class="row mb-3">
+                                <div class="col-2">
+                                    <img src="assets/image/R.jpg" class="rounded-circle" alt="Reviewer Avatar"
+                                        style="width: 50px; height: 50px;">
+                                </div>
+                                <div class="col-10">
+                                    我愛欣伶
+                                    <div class="d-flex">
+                                        <span class="text-warning">★★★★★</span>
+                                    </div>
+                                    <p>我喝了之後活力充沛!!</p>
+                                </div>
+                                <div class="col-2">
+                                    <img src="assets/image/R.jpg" class="rounded-circle" alt="Reviewer Avatar"
+                                        style="width: 50px; height: 50px;">
+                                </div>
+                                <div class="col-10">
+                                    我愛欣伶
+                                    <div class="d-flex">
+                                        <span class="text-warning">★★★★★</span>
+                                    </div>
+                                    <p>我都送這個給阿桂當生日禮物</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+
+
+
+
+
+
+
+    <div class="greenBackground">
+        <div class="container">
+            <footer class="d-flex flex-wrap justify-content-between align-items-center p-3 mt-4 border-top">
+                <div class="col-md-4 d-flex align-items-center">
+                    <span class="text-white">&copy; 2024 Company, Inc</span>
+                </div>
+                <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+                    <li class="ms-3"><a class="text-muted iconFillWhite" href="https://x.com/LithuanianGovt"
+                            target="_blank"><img src="assets/image/twitter.svg" alt="twitter" height="24"></a>
+                    </li>
+                    <li class="ms-3"><a class="text-muted iconFillWhite" href="https://www.instagram.com/"
+                            target="_blank"><img src="assets/image/instagram.svg" alt="instagram" height="24"></a>
+                    </li>
+                    <li class="ms-3"><a class="text-muted iconFillWhite"
+                            href="https://www.facebook.com/pages/%E4%B8%AD%E5%8E%9F%E5%A4%A7%E5%AD%B8/108333922524869"
+                            target="_blank"><img src="assets/image/facebook.svg" alt="facebook" height="24"></a>
+                    </li>
+                </ul>
+            </footer>
+        </div>
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,69 @@
+@charset "utf-8";
+
+@font-face {
+  font-family: 'Geomanist-ExtraLight';
+  src: url('../font/Geomanist-ExtraLight.woff') format("woff");
+}
+
+@import url(recipe.css);
+.card.block {
+  position: relative;
+  margin: auto;
+  width: 100%;
+}
+
+.card.block img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlay-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 1.5em;
+  font-weight: bold;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.card.block:hover img {
+  filter: brightness(0.5) blur(5px);
+}
+
+.card.block:hover .overlay-text {
+  opacity: 1;
+}
+.img-container{
+  display: inline-block;
+}
+
+header {
+  --bg: #14B09B;
+  --color: #ffffff;
+  background: var(--bg);
+  color: var(--color);
+  position: sticky;
+  top: 0;
+  z-index: 5;
+}
+
+.recipe {
+  font-family: Geomanist-ExtraLight;
+  color: white;
+  background-image: url("../image/recipeCover.png");
+  background-color: rgb(28, 24, 58);
+}
+
+/*FOOTER*/
+.greenBackground {
+  margin: 0;
+  background-color: #14B09B;
+}
+
+.iconFillWhite {
+  filter: invert(100%) sepia(100%) saturate(542%) hue-rotate(298deg) brightness(116%) contrast(112%);
+}

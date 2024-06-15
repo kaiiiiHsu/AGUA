@@ -1,0 +1,91 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: 'Geomanist-ExtraLight';
+    src: url('../font/Geomanist-ExtraLight.woff') format("woff");
+}
+
+/* 控制search-bar&logo縮放 */
+@media (max-width: 768px) {
+    .search-bar {
+        display: none;
+    }
+
+    .logo {
+        height: 30px;
+    }
+}
+
+.iconFillWhite {
+    filter: invert(100%) sepia(100%) saturate(542%) hue-rotate(298deg) brightness(116%) contrast(112%);
+}
+
+header {
+    --bg: #14B09B;
+    --color: #ffffff;
+    background: var(--bg);
+    color: var(--color);
+    position: sticky;
+    top: 0;
+    z-index: 5;
+}
+
+.productImg {
+    width: 65%;
+    /* 根據需求調整這裡的值 */
+    height: auto;
+    /* 確保圖片按比例縮放 */
+}
+
+/*SLOGAN*/
+.slogan {
+    font-family: Geomanist-ExtraLight;
+    letter-spacing: 1px;
+    color: white;
+    background-image: url(../image/sloganCover.png);
+}
+
+.introCardGroup{
+    box-sizing: border-box;
+    margin: 0px auto; /*置中對齊*/
+    width: 70%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    /* repeat(3, 1fr); || 33% 33% 33% */
+    grid-auto-flow: row; /*橫向的排列*/
+    grid-gap: 10px
+}
+
+.introCard {
+    color: white;
+    background-color: #14B09B;
+    /*background-color: white;*/
+    background-image: url(image/card_img.jpg);
+    background-size: cover;
+    text-align: center;
+
+    padding: 20px;
+    margin: 10px;
+    border-radius: 15px;
+}
+
+.introCard p{
+    margin-top: 10px;
+}
+
+.introCard:nth-child(2n){
+    background-color: #cc8a56;
+}
+.introCard:nth-child(2n+1){
+    background-color: #0359ae;
+}
+
+/*FOOTER*/
+.greenBackground {
+    margin: 0;
+    background-color: #14B09B;
+}
+

@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
+  <link href="assets/css/carousel.css" rel="stylesheet">
+  <link href="assets/css/index.css" rel="stylesheet">
+  <!-- AOS CSS -->
+  <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
+</head>
+
+<body style="background-color: #EBE5D9;">
+  <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+  <!--Header-->
+  <header class="p-3 text-white">
+    <div class="container">
+        <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+            <!--LOGO-->
+            <a href="index.html"
+                class="d-flex align-items-center mb-2 me-3 mb-lg-0 text-white text-decoration-none">
+                <img src="assets/image/logo.png" height="100" alt="logo">
+            </a>
+            <!--導覽列-->
+            <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-">
+                <li><a href="index.html" class="nav-link px-2 text-white">首頁</a></li>
+                <li><a href="goods.html" class="nav-link px-2 text-white">商品一覽</a></li>
+                <li><a href="about.html" class="nav-link px-2 text-white">關於我們</a></li>
+                <li><a href="recipe.html" class="nav-link px-2 text-white">調理推薦</a></li>
+            </ul>
+            <!--商品搜尋-->
+            <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3">
+                <input name="itemSearch" type="search" class="form-control form-control-dark"
+                    placeholder="Search..." aria-label="Search">
+            </form>
+            <!--登入/購物車-->
+            <div class="text-end">
+                <a href="login.html">
+                    <button type="button" class="btn btn-outline-light me-2"><img src="assets/image/user.png"
+                            height="30px" alt="user"></button>
+                </a>
+                <a href="Cart.html"><button type="button" class="btn btn-outline-light"><img
+                            src="assets/image/shopping-cart.png" height="30px" alt="cart"></button></a>
+
+            </div>
+        </div>
+    </div>
+</header>
+  <!--嵌入影片-->
+  <div class="video">
+    <iframe width="100%" height="500"
+      src="https://www.youtube.com/embed/N9mXrziYRn8?controls=0&rel=0&start=7&autoplay=1&mute=1&" frameborder="0"
+      allowtransparency="true"></iframe>
+  </div>
+  <!--SLOGAN-->
+  <div class="my-3 w-100" data-aos="fade-up">
+    <div class="position-relative overflow-hidden px-3 p-md-5 m-md-3 text-center slogan">
+      <div class="col-md-5 p-lg-5 mx-auto my-5">
+        <h1>極致純淨，尊貴之選。<br>
+          Extremadamente puro, la elección de los nobles.</h1>
+        <p class="lead fw-normal"> 極致純淨，尊貴之選。源自天然泉源的礦泉水，為您帶來最純粹的口感與健康享受。每一口都是對品質的堅持，給您無與倫比的清新體驗。</p>
+        <a class="btn btn-outline-light" href="about.html" style="font-weight: bold;">About Us</a>
+      </div>
+      <!-- <div class="product-device shadow-sm d-none d-md-block"></div>
+      <div class="product-device product-device-2 shadow-sm d-none d-md-block"></div> -->
+    </div>
+  </div>
+  <!--PICK_UP-->
+  
+  <h1 class="mt-5 pickUpTitle" data-aos="data-aos-delay='50'">˗ˋˏ PICK UP ˎˊ˗</h1>
+  <div class="card-group mx-5 col" data-aos="fade-up">
+    <img src="assets/image/leaf.png" data-aos="fade-up" alt="" class="leaf" style="width: 18rem; z-index: 1;">
+    <div class="card m-5" style="width: 18rem; z-index: 2;">
+      <img src="assets/image/sparkling2.png" class="card-img-top mt-1 mx-auto productImg" alt="ItemA">
+      <div class="card-body">
+        <h5 class="card-title">Clear American Sparkling Water, Strawberry</h5>
+        <p class="card-text">NT$27</p>
+        <a href="Product5.html" class="btn btn-outline-light">查看商品</a>
+      </div>
+    </div>
+    <div class="card m-5 productImg" style="width: 18rem; z-index: 2;">
+      <img src="assets/image/water2.png" class="card-img-top mt-1 mx-auto productImg" alt="ItemB">
+      <div class="card-body">
+        <h5 class="card-title">Silica 矽麗卡 霧島天然深層礦泉水</h5>
+        <p class="card-text">NT$49</p>
+        <a href="Product2.html" class="btn btn-outline-light">查看商品</a>
+      </div>
+    </div>
+    <div class="card m-5 productImg" style="width: 18rem; z-index: 2;">
+      <img src="assets/image/water3.png" class="card-img-top mt-1 mx-auto productImg" alt="ItemC">
+      <div class="card-body">
+        <h5 class="card-title">VOSS挪威芙絲 極致純淨礦泉水</h5>
+        <p class="card-text">NT$200</p>
+        <a href="Product3.html" class="btn btn-outline-light">查看商品</a>
+      </div>
+    </div>
+  </div>
+  <!--RECIPE-->
+  <div class="my-3 w-100" data-aos="fade-up">
+    <div class="position-relative overflow-hidden px-3 p-md-5 m-md-3 text-center recipe ">
+      <div class="col-md-5 p-lg-5 mx-auto my-5">
+        <h1 class="display-4 fw-normal">Recipe</h1>
+        <p class="lead fw-normal">
+          清爽氣泡，極致享受。選擇我們的氣泡水，體驗每一口帶來的活力與清新，完美搭配任何餐飲。讓你的日常充滿活力與樂趣。</p>
+        <a class="btn btn-outline-light" href="recipe.html" style="font-weight: bold;">Learn More</a>
+      </div>
+      <!-- <div class="product-device shadow-sm d-none d-md-block"></div>
+      <div class="product-device product-device-2 shadow-sm d-none d-md-block"></div> -->
+    </div>
+  </div>
+  <!--MAP-->
+  <div class="container marketing" data-aos="fade-up">
+    <hr class="featurette-divider">
+    <div class="row">
+      <div class="col">
+        <div class="bd-placeholder-img bd-placeholder-img-lg mx-auto google-map" aria-label="Placeholder: 500x500"
+          preserveAspectRatio="xMidYMid slice" focusable="false">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4410.145349186174!2d25.279950707283678!3d54.68652702546165!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46dd9419fda9d605%3A0x2503d17455c3ef25!2z56uL6Zm25a6b5ZyL5a625Y2a54mp6aSo!5e0!3m2!1szh-TW!2stw!4v1716651664391!5m2!1szh-TW!2stw"
+            width="100%" height="500" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+
+        <!-- <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500"
+          height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500"
+          preserveAspectRatio="xMidYMid slice" focusable="false">
+          <title>Placeholder</title>
+          <rect width="100%" height="100%" fill="#eee" /><text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text>
+        </svg> -->
+      </div>
+      <div class="col">
+        <h2 class="featurette-heading">聯絡我們 <span class="text-muted contactUs">Contact Us</span>
+        </h2>
+        <p class="lead">清新純淨，來自天然泉源，給您最純粹的口感和健康的選擇。享受自然，選擇我們的礦泉水。
+        </p>
+      </div>
+
+    </div>
+  </div>
+  <!--FOOTER-->
+  <div class="greenBackground">
+    <div class="container">
+      <footer class="d-flex flex-wrap justify-content-between align-items-center p-3 mt-4 border-top">
+        <div class="col-md-4 d-flex align-items-center">
+          <span class="text-white">&copy; 2024 Company, Inc</span>
+        </div>
+        <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+          <li class="ms-3"><a class="text-muted iconFillWhite" href="https://x.com/LithuanianGovt" target="_blank"><img
+                src="assets/image/twitter.svg" alt="twitter" height="24"></a>
+          </li>
+          <li class="ms-3"><a class="text-muted iconFillWhite" href="https://www.instagram.com/" target="_blank"><img
+                src="assets/image/instagram.svg" alt="instagram" height="24"></a></li>
+          <li class="ms-3"><a class="text-muted iconFillWhite"
+              href="https://www.facebook.com/pages/%E4%B8%AD%E5%8E%9F%E5%A4%A7%E5%AD%B8/108333922524869"
+              target="_blank"><img src="assets/image/facebook.svg" alt="facebook" height="24"></a>
+          </li>
+        </ul>
+      </footer>
+    </div>
+  </div>
+</body>
+
+</html>

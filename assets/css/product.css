@@ -1,0 +1,58 @@
+body {
+    background-color: #FFF9ED;
+}
+
+@media (max-width: 768px) {
+    .search-bar {
+        display: none;
+    }
+}
+header {
+    --bg: #14B09B;
+    --color: #ffffff;
+    background: var(--bg);
+    color: var(--color);
+    position: sticky;
+    top: 0;
+    z-index: 5;
+} 
+
+a {
+    text-decoration: none;
+}
+
+.greenBackground {
+    margin: 0;
+    background-color: #14B09B;
+}
+
+.iconFillWhite {
+    filter: invert(100%) sepia(100%) saturate(542%) hue-rotate(298deg) brightness(116%) contrast(112%);
+}
+
+/* 填滿星星的css */
+.star-icon.filled {
+    font-variation-settings: 'FILL' 1, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+    color: orange;
+}
+.star-icon.outline {
+    font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+}
+
+.photo-box {
+    background-color: #cc8a56;
+}
+
+.star-icon {
+    font-family: 'Material Symbols Outlined';
+    font-size: 24px;
+    cursor: pointer;
+    margin-right: 5px;
+    
+}
+
+.star-rating input {
+    display: none;
+}
+
+

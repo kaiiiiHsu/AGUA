@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
+  <link rel="canonical" href="https://getbootstrap.com/docs/5.1/examples/album/">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8" crossorigin="anonymous">
+    </script>
+  <link rel="stylesheet" href="assets/css/recipe.css">
+  <title>調理推薦</title>
+  <!-- AOS CSS -->
+  <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
+</head>
+
+<body style="background-color: #EBE5D9;;">
+  <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+  <!-- HEADER -->
+  <header class="p-3 text-white">
+    <div class="container">
+        <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+            <!--LOGO-->
+            <a href="index.html"
+                class="d-flex align-items-center mb-2 me-3 mb-lg-0 text-white text-decoration-none">
+                <img src="assets/image/logo.png" height="100" alt="logo">
+            </a>
+            <!--導覽列-->
+            <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-">
+                <li><a href="index.html" class="nav-link px-2 text-white">首頁</a></li>
+                <li><a href="goods.html" class="nav-link px-2 text-white">商品一覽</a></li>
+                <li><a href="about.html" class="nav-link px-2 text-white">關於我們</a></li>
+                <li><a href="recipe.html" class="nav-link px-2 text-white">調理推薦</a></li>
+            </ul>
+            <!--商品搜尋-->
+            <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3">
+                <input name="itemSearch" type="search" class="form-control form-control-dark"
+                    placeholder="Search..." aria-label="Search">
+            </form>
+            <!--登入/購物車-->
+            <div class="text-end">
+                <a href="login.html">
+                    <button type="button" class="btn btn-outline-light me-2"><img src="assets/image/user.png"
+                            height="30px" alt="user"></button>
+                </a>
+                <a href="Cart.html"><button type="button" class="btn btn-outline-light"><img
+                            src="assets/image/shopping-cart.png" height="30px" alt="cart"></button></a>
+
+            </div>
+        </div>
+    </div>
+</header>
+  <!--cover-->
+  <div class="my-3 w-100" data-aos="fade-up">
+    <div class="position-relative overflow-hidden px-3 p-md-5 m-md-3 text-center recipe ">
+      <div class="col-md-5 p-lg-5 mx-auto my-5">
+        <h1 class="display-4 fw-normal">Recipe</h1>
+        <p class="lead fw-normal">
+          清爽氣泡，極致享受。選擇我們的氣泡水，體驗每一口帶來的活力與清新，完美搭配任何餐飲。讓你的日常充滿活力與樂趣。</p>
+      </div>
+      <!-- <div class="product-device shadow-sm d-none d-md-block"></div>
+        <div class="product-device product-device-2 shadow-sm d-none d-md-block"></div> -->
+    </div>
+  </div>
+  <!-- RECIPE -->
+  <div class="album py-2">
+    <div class="container">
+      <h1 class="my-5" style="text-align: center;" data-aos="fade-up">
+        調理推薦</h1>
+      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-2 g-3" data-aos="fade-up">
+        <div class="col">
+          <div class="card shadow-sm">
+            <div class="card block">
+              <img src="assets/image/rice.jpg" class="card-img-top">
+              <div class="overlay-text">以至尊礦泉水浸泡頂級珍珠米，經過輕柔搓洗，精準掌握水米比例，火候完美，最後蒸氣焗透，奉上如絲綢般香糯的完美白飯🍚</div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card shadow-sm">
+            <div class="card block">
+              <img src="assets/image/lemon.jpg" class="card-img-top">
+              <div class="overlay-text">以天上來水、地底湧泉般純淨的高級礦泉水，搭配手摘黃金檸檬，切片後輕揉出汁，冰鎮至晶瑩剔透，就能獲得一杯檸檬水</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-2 g-3" data-aos="fade-up">
+        <div class="col">
+          <div class="card shadow-sm">
+            <div class="card block">
+              <img src="assets/image/warm.jpg" class="card-img-top">
+              <div class="overlay-text">將來自阿爾卑斯山脈，由初春溶解的雪水萃取，將其煮開置放涼，即可獲得一杯溫開水🫗</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <h1 class="my-5" style="text-align: center;" data-aos="fade-up">
+        喝水的好處</h1>
+      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-2 g-3" data-aos="fade-up">
+        <div class="col">
+          <div class="card shadow-sm">
+            <div class="card block">
+              <img src="assets/image/bebeagua.jpg" class="card-img-top">
+              <div class="overlay-text">當你口渴得像撒哈拉沙漠一樣乾渴時，一杯水猶如來自北極的甘露，冰涼透心，立刻滋潤心靈</div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card shadow-sm">
+            <div class="card block">
+              <img src="assets/image/health.jpg" class="card-img-top">
+              <div class="overlay-text">水分如同魔法般滋潤你的細胞，洗淨你的器官，煥發你的青春活力，讓你在生命的舞台上煥然一新，煥發光彩。</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-2 g-3" data-aos="fade-up">
+
+        <div class="col">
+          <div class="card shadow-sm">
+            <div class="card block">
+              <img src="assets/image/pee.jpg" class="card-img-top">
+              <div class="overlay-text">每一口水都像是一股神奇的力量，輕輕擁抱著你的器官，引導著它們排除體內的毒素，讓你感受到一種愉悅的輕盈感</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--FOOTER-->
+  <div class="greenBackground">
+    <div class="container">
+      <footer class="d-flex flex-wrap justify-content-between align-items-center p-3 mt-4 border-top">
+        <div class="col-md-4 d-flex align-items-center">
+          <span class="text-white">© 2024 Company, Inc</span>
+        </div>
+        <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+          <li class="ms-3"><a class="text-muted iconFillWhite" href="https://x.com/LithuanianGovt" target="_blank"><img
+                src="assets/image/twitter.svg" alt="twitter" height="24"></a>
+          </li>
+          <li class="ms-3"><a class="text-muted iconFillWhite" href="https://www.instagram.com/" target="_blank"><img
+                src="assets/image/instagram.svg" alt="instagram" height="24"></a></li>
+          <li class="ms-3"><a class="text-muted iconFillWhite"
+              href="https://www.facebook.com/pages/%E4%B8%AD%E5%8E%9F%E5%A4%A7%E5%AD%B8/108333922524869"
+              target="_blank"><img src="assets/image/facebook.svg" alt="facebook" height="24"></a>
+          </li>
+        </ul>
+      </footer>
+    </div>
+  </div>
+</body>
+
+</html>

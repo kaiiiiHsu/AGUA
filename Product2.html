@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product</title>
+    <!-- gooel符號庫 -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/product.css">
+</head>
+<body>
+    <header class="p-3 text-white">
+        <div class="container">
+            <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+                <!--LOGO-->
+                <a href="index.html"
+                    class="d-flex align-items-center mb-2 me-3 mb-lg-0 text-white text-decoration-none">
+                    <img src="assets/image/logo.png" height="100" alt="logo">
+                </a>
+                <!--導覽列-->
+                <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-">
+                    <li><a href="index.html" class="nav-link px-2 text-white">首頁</a></li>
+                    <li><a href="goods.html" class="nav-link px-2 text-white">商品一覽</a></li>
+                    <li><a href="about.html" class="nav-link px-2 text-white">關於我們</a></li>
+                    <li><a href="recipe.html" class="nav-link px-2 text-white">調理推薦</a></li>
+                </ul>
+                <!--商品搜尋-->
+                <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3">
+                    <input name="itemSearch" type="search" class="form-control form-control-dark"
+                        placeholder="Search..." aria-label="Search">
+                </form>
+                <!--登入/購物車-->
+                <div class="text-end">
+                    <a href="login.html">
+                        <button type="button" class="btn btn-outline-light me-2"><img src="assets/image/user.png"
+                                height="30px" alt="user"></button>
+                    </a>
+                    <a href="Cart.html"><button type="button" class="btn btn-outline-light"><img
+                                src="assets/image/shopping-cart.png" height="30px" alt="cart"></button></a>
+
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Product Section -->
+
+    <!-- FORM在這裡(下面還有評論的FORM) -->
+    <form method="get" action="Cart.html" name="cart">
+    <div class="container my-5">
+        <div class="row">
+            <div class="col-md-6 ">
+                <img src="assets/image/water2.png" class="img-fluid photo-box" alt="Product Photo">
+            </div>
+            <div class="col-md-6">
+                <h1>Silica 矽麗卡 霧島天然深層礦泉水</h1>
+                <p>喝的二氧化矽
+                    具備足以左右美容效果的珍貴成分
+                    人體無法自行產生二氧化矽
+                    卻會每天消耗
+                    因此需要相當的補充</p>
+                <p class="text-danger">NT$47</p>
+                <div class="input-group mb-3" style="width: 150px;">
+                    <button class="btn btn-outline-secondary" type="button" id="button-minus">-</button>
+                    <input type="text" class="form-control text-center" value="1" id="quantity" name="item1">
+                    <button class="btn btn-outline-secondary" type="button" id="button-plus">+</button>
+                </div>
+                <button class="btn btn-primary" value="submit">加入購物車</button>
+            </div>
+        </div>
+    </div>
+    </form>
+
+    <!-- Reviews Section -->
+
+    <!-- 評論的FORM -->
+    <form action="" method="get" name="comment">
+    <div class="container">
+        <h2>商品評論</h2>
+        <p>5/5（25則評論）</p>
+        <hr>
+        <!-- Review Form -->
+        <div class="row mb-3">
+            <div class="col-1">
+                <img src="assets/image/R.jpg" class="rounded-circle" alt="Reviewer Avatar" style="width: 50px; height: 50px;">
+            </div>
+            <div class="col-11">
+                蔡欣伶的狗
+                    <div class="d-flex">
+                        <input type="hidden" id="rate" value="">
+                        <span class="star d-flex mb-2">
+                            <span class="star-icon outline " data-index="1">star_outline</span>
+                            <span class="star-icon outline" data-index="2">star_outline</span>
+                            <span class="star-icon outline" data-index="3">star_outline</span>
+                            <span class="star-icon outline" data-index="4">star_outline</span>
+                            <span class="star-icon outline" data-index="5">star_outline</span>
+                        </span>
+                    </div>
+                    <div class="mb-3">
+                        <input type="text" class="form-control" id="commentText" name="commentText" placeholder="填寫評論">
+                    </div>
+                    <button type="submit" class="btn btn-primary">發送</button>
+            </div>
+        </div>
+    </form>
+        <hr>
+        <!-- Existing Reviews -->
+        <div class="row mb-3">
+            <div class="col-1">
+                <img src="assets/image/R.jpg" class="rounded-circle" alt="Reviewer Avatar" style="width: 50px; height: 50px;">
+            </div>
+            <div class="col-11">
+                蔡欣伶
+                <div class="d-flex">
+                    <span class="text-warning">★★★★★</span>
+                </div>
+                <p>我喝了之後活力滿滿!!</p>
+            </div>
+        </div>
+        <hr>
+        <div class="row mb-3">
+            <div class="col-1">
+                <img src="assets/image/R.jpg" class="rounded-circle" alt="Reviewer Avatar" style="width: 50px; height: 50px;">
+            </div>
+            <div class="col-11">
+                阿桂
+                <div class="d-flex">
+                    <span class="text-warning">★★★★★</span>
+                </div>
+                <p>一喝完就成功辭職了!</p>
+            </div>
+        </div>
+        <hr>
+        <div class="row mb-3">
+            <div class="col-1">
+                <img src="assets/image/R.jpg" class="rounded-circle" alt="Reviewer Avatar" style="width: 50px; height: 50px;">
+            </div>
+            <div class="col-11">
+                小番茄
+                <div class="d-flex">
+                    <span class="text-warning">★★★★★</span>
+                </div>
+                <p>這是少數我能夠接受的水</p>
+            </div>
+        </div>
+        <hr>
+        <div class="row mb-3">
+            <div class="col-1">
+                <img src="assets/image/R.jpg" class="rounded-circle" alt="Reviewer Avatar" style="width: 50px; height: 50px;">
+            </div>
+            <div class="col-11">
+                濱沛伶
+                <div class="d-flex">
+                    <span class="text-warning">★★★★★</span>
+                </div>
+                <p>喝了之後終於被阿桂記得</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="greenBackground">
+        <div class="container">
+          <footer class="d-flex flex-wrap justify-content-between align-items-center p-3 mt-4 border-top">
+            <div class="col-md-4 d-flex align-items-center">
+              <span class="text-white">&copy; 2024 Company, Inc</span>
+            </div>
+            <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+              <li class="ms-3"><a class="text-muted iconFillWhite" href="https://x.com/LithuanianGovt" target="_blank"><img
+                    src="assets/image/twitter.svg" alt="twitter" height="24"></a>
+              </li>
+              <li class="ms-3"><a class="text-muted iconFillWhite" href="https://www.instagram.com/" target="_blank"><img
+                    src="assets/image/instagram.svg" alt="instagram" height="24"></a></li>
+              <li class="ms-3"><a class="text-muted iconFillWhite"
+                  href="https://www.facebook.com/pages/%E4%B8%AD%E5%8E%9F%E5%A4%A7%E5%AD%B8/108333922524869"
+                  target="_blank"><img src="assets/image/facebook.svg" alt="facebook" height="24"></a>
+              </li>
+            </ul>
+          </footer>
+        </div>
+      </div>
+
+    <!-- Custom JS -->
+    <script src="assets/js/product.js"></script>
+</body>
+</html>
